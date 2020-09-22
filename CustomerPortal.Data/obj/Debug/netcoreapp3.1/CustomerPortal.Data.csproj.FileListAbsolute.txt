@@ -1,0 +1,12 @@
+E:\Practise\VL\CustomerPortal.Data\bin\Debug\netcoreapp3.1\CustomerPortal.Data.deps.json
+E:\Practise\VL\CustomerPortal.Data\bin\Debug\netcoreapp3.1\CustomerPortal.Data.dll
+E:\Practise\VL\CustomerPortal.Data\obj\Debug\netcoreapp3.1\CustomerPortal.Data.csprojAssemblyReference.cache
+E:\Practise\VL\CustomerPortal.Data\obj\Debug\netcoreapp3.1\CustomerPortal.Data.AssemblyInfoInputs.cache
+E:\Practise\VL\CustomerPortal.Data\obj\Debug\netcoreapp3.1\CustomerPortal.Data.AssemblyInfo.cs
+E:\Practise\VL\CustomerPortal.Data\bin\Debug\netcoreapp3.1\CustomerPortal.Data.runtimeconfig.json
+E:\Practise\VL\CustomerPortal.Data\bin\Debug\netcoreapp3.1\CustomerPortal.Data.runtimeconfig.dev.json
+E:\Practise\VL\CustomerPortal.Data\obj\Debug\netcoreapp3.1\CustomerPortal.Data.genruntimeconfig.cache
+E:\Practise\VL\CustomerPortal.Data\bin\Debug\netcoreapp3.1\CustomerPortal.Data.pdb
+E:\Practise\VL\CustomerPortal.Data\obj\Debug\netcoreapp3.1\CustomerPortal.Data.csproj.CoreCompileInputs.cache
+E:\Practise\VL\CustomerPortal.Data\obj\Debug\netcoreapp3.1\CustomerPortal.Data.dll
+E:\Practise\VL\CustomerPortal.Data\obj\Debug\netcoreapp3.1\CustomerPortal.Data.pdb

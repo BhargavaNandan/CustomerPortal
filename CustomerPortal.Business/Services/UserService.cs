@@ -1,14 +1,20 @@
 ﻿using CustomerPortal.Data;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace CustomerPortal.Business.Services
 {
     public interface IUserService
     {
-        Task<User> Authenticate(string username, string password);
+        string Authenticate(string username, string password);
         Task<IEnumerable<User>> GetAll();
+        string GenerateJSONWebToken(User userInfo, IConfiguration _config);
     }
 
     public class UserService : IUserService
@@ -18,9 +24,9 @@ namespace CustomerPortal.Business.Services
             new User { Id = 1, FirstName = "Test", LastName = "User", Username = "test", Password = "test" }
         };
 
-        public async Task<User> Authenticate(string username, string password)
+        public string Authenticate(string username, string password)
         {
-            var user = await Task.Run(() => _users.SingleOrDefault(x => x.Username == username && x.Password == password));
+            var user =  _users.SingleOrDefault(x => x.Username == username && x.Password == password);
 
             // return null if user not found
             if (user == null)
@@ -28,7 +34,7 @@ namespace CustomerPortal.Business.Services
 
             // authentication successful so return user details without password
             user.Password = null;
-            return user;
+            return "Authenticated";
         }
 
         public async Task<IEnumerable<User>> GetAll()
@@ -38,6 +44,20 @@ namespace CustomerPortal.Business.Services
                 x.Password = null;
                 return x;
             }));
+        }
+
+        public string GenerateJSONWebToken(User userInfo, IConfiguration _config)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(_config["Jwt:Issuer"],
+              _config["Jwt:Issuer"],
+              null,
+              expires: DateTime.Now.AddMinutes(120),
+              signingCredentials: credentials);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

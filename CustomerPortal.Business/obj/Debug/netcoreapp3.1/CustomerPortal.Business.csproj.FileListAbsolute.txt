@@ -1,0 +1,12 @@
+E:\Practise\VL\CustomerPortal.Business\bin\Debug\netcoreapp3.1\CustomerPortal.Business.deps.json
+E:\Practise\VL\CustomerPortal.Business\bin\Debug\netcoreapp3.1\CustomerPortal.Business.dll
+E:\Practise\VL\CustomerPortal.Business\obj\Debug\netcoreapp3.1\CustomerPortal.Business.csprojAssemblyReference.cache
+E:\Practise\VL\CustomerPortal.Business\obj\Debug\netcoreapp3.1\CustomerPortal.Business.AssemblyInfoInputs.cache
+E:\Practise\VL\CustomerPortal.Business\obj\Debug\netcoreapp3.1\CustomerPortal.Business.AssemblyInfo.cs
+E:\Practise\VL\CustomerPortal.Business\bin\Debug\netcoreapp3.1\CustomerPortal.Business.pdb
+E:\Practise\VL\CustomerPortal.Business\bin\Debug\netcoreapp3.1\CustomerPortal.Data.dll
+E:\Practise\VL\CustomerPortal.Business\bin\Debug\netcoreapp3.1\CustomerPortal.Data.pdb
+E:\Practise\VL\CustomerPortal.Business\obj\Debug\netcoreapp3.1\CustomerPortal.Business.csproj.CopyComplete
+E:\Practise\VL\CustomerPortal.Business\obj\Debug\netcoreapp3.1\CustomerPortal.Business.dll
+E:\Practise\VL\CustomerPortal.Business\obj\Debug\netcoreapp3.1\CustomerPortal.Business.pdb
+E:\Practise\VL\CustomerPortal.Business\obj\Debug\netcoreapp3.1\CustomerPortal.Business.csproj.CoreCompileInputs.cache
